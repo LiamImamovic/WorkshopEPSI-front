@@ -1,7 +1,5 @@
 import React from "react";
 
-const Asso = () => {
+export const Asso = () => {
   return <div>Asso</div>;
 };
-
-export default Asso;

@@ -1,7 +1,5 @@
 import React from "react";
 
-const BonPlans = () => {
+export const Bonplans = () => {
   return <div>BonPlans</div>;
 };
-
-export default BonPlans;
