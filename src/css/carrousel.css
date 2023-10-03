@@ -1,0 +1,64 @@
+#carrousel{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+#carrousel a{
+    max-width: none;
+    min-width: 100%;
+}
+.cardHome{
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+.cardDescriptionLogo{
+    height: 90px;
+    z-index: 3;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardLogo{
+    height: 90px;
+    padding: 10px;
+}
+
+.cardDescription{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.leftarrow{
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 20px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+}
+
+.rightarrow{
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+}
