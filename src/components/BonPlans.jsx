@@ -1,16 +1,31 @@
-import React, {useState} from "react";
-import dataCarrousel from "../data/carrousel.json"
-import CarrouselCard from "./card.jsx"
-import "../css/carrousel.css"
+import React, { useState } from "react";
+import dataCarrousel from "../data/carrousel.json";
+import CarrouselCard from "./card.jsx";
+import "../css/carrousel.css";
 
 export const Bonplans = () => {
-    let [count, setCount] = useState(0);
-    let [countCarrouselPos, setCountCarrouselPos] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [carrouselcount, setCarrouselcount] = useState(0)
+    const prev = () => {
+        if (currentIndex > 0) {
+            setCurrentIndex(currentIndex - 1);
+        } else {
+            // Revenir au dernier élément lorsque vous êtes au début
+            setCurrentIndex(dataCarrousel.length - 1);
+        }
+    };
 
-    const carrousel = dataCarrousel.map((item,index) => {
-      /* créé une logique afin de savoir si on a besoin de le mettre dans le carrousel d'image */
-        console.log(`carrousel : ${item.carrousel} id:${item.id} `)
-        if (item.carrousel==='1'){
+    const next = () => {
+        if (currentIndex < dataCarrousel.length - 1) {
+            setCurrentIndex(currentIndex + 1);
+        } else {
+            // Revenir au premier élément lorsque vous êtes à la fin
+            setCurrentIndex(0);
+        }
+    };
+
+    const carrousel = dataCarrousel.map((item, index) => {
+        if (item.carrousel === "1") {
             return (
                 <CarrouselCard
                     key={index}
@@ -25,13 +40,17 @@ export const Bonplans = () => {
         return null;
     });
 
-  return (
-      <section>
-          <div id={`carrousel pageCarrousel`}>
-              <p className={"leftarrow"}> &gt;</p>
-                    {carrousel}
-              <p className={"rightarrow"}> &lt;</p>
-          </div>
-      </section>
-  )
+    return (
+        <main>
+            <div id={`carrousel`} className="carousel-container">
+                <p onClick={prev} className={"leftarrow"}>
+                    &lt;
+                </p>
+                {carrousel}
+                <p onClick={next} className={"rightarrow"}>
+                    &gt;
+                </p>
+            </div>
+        </main>
+    );
 };

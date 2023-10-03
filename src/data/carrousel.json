@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "Adidas",
+    "logo": "https://cdn-icons-png.flaticon.com/256/731/731962.png",
+    "img": "https://lecycle.fr/wp-content/uploads/2022/06/AdidasParleyRoadBoaOuv01-1-e1655197486729.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "adresse": "",
+    "carrousel": "0"
+  },
+  {
+    "id": "2",
+    "title": "Nike",
+    "logo": "https://cdn-icons-png.flaticon.com/256/732/732229.png",
+    "img": "https://www.macadambasket.com/c/12-category_default/chaussures.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "adresse": "",
+    "carrousel": "1"
+  },
+  {
+    "id": "3",
+    "title": "Asics",
+    "logo": "https://cdn.iconscout.com/icon/free/png-256/free-asics-282909.png?f=webp",
+    "img": "https://www.asics.com/on/demandware.static/-/Library-Sites-shared-eu-library/default/dw2aa25751/firstspirit/media/aw21/blog_images/running_shoes__advies_and_options/compressed_images_14/asics-running-advies-lp-article-09102021-5.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "adresse": "",
+    "carrousel": "1"
+  },
+  {
+    "id": "4",
+    "title": "Vans",
+    "logo": "https://cdn.iconscout.com/icon/free/png-256/free-vans-202702.png?f=webp",
+    "img": "https://www.peah.fr/wp-content/uploads/2022/10/chaussures-vans-homme-1024x664.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "adresse": "",
+    "carrousel": "1"
+  }
+]
