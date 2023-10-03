@@ -1,0 +1,36 @@
+main{
+    height: calc(100vh - 72px);
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+#association div{
+    background-color: purple;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+#bonPlans div{
+    background-color: green;
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    rotate: 26deg;
+    top:-50%;
+    left: 56%;
+}
+
+#association p{
+    position: absolute;
+    top: 22%;
+    left: 22%;
+}
+
+#bonPlans p{
+    rotate: -26deg;
+    position: absolute;
+    bottom: 31%;
+    right: 50%;
+}

@@ -7,12 +7,14 @@ import { Signup } from "./components/Signup";
 import { Asso } from "./components/Asso";
 import { Bonplans } from "./components/Bonplans";
 import { Dashboard } from "./components/Dashboard";
+import {Header} from "./components/Header.jsx";
 
 function App() {
   return (
     <>
       <div className="App">
         <BrowserRouter>
+          <Header />
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/login" element={<Login />}></Route>
