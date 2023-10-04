@@ -1,4 +1,6 @@
-
+#card{
+    width: 100%;
+}
 
 #card .cardCarouselHome{
     margin-left: 5%;

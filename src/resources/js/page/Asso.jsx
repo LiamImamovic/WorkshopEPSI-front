@@ -5,8 +5,6 @@ import Card from "../components/cardAssoBP.jsx";
 
 
 export const Asso = () => {
-
-
     const card = dataCard.map((item, index) => {
         return (
             <Card

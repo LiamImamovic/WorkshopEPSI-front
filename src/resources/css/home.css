@@ -4,7 +4,7 @@
 }
 
 .pagehomecenter{
-    height: calc(100vh - 72px);
+    height: calc(100vh - 80px);
     width: 100%;
     overflow: hidden;
     position: absolute;
@@ -84,9 +84,6 @@
 }
 
 @media screen and (min-width: 1050px){
-    .pagehomecenter{
-        height: calc(100vh - 84px);
-    }
     #association div{
         height: 400px;
         width: 470px;

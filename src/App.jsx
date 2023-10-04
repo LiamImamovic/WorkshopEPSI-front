@@ -21,9 +21,9 @@ function App() {
             <Route path="/login" element={<Login />}></Route>
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/asso" element={<Asso />}></Route>
-            <Route path="/bonplans" element={<Bonplans />}></Route>
+            <Route path="/bonplan" element={<Bonplans />}></Route>
             <Route path="/asso/:id" element={<Description />} />
-            <Route path="/bonplans/:id" element={<Description />} />
+            <Route path="/bonplan/:id" element={<Description />} />
             <Route path="/dashboard" element={<Dashboard />}></Route>
           </Routes>
         </BrowserRouter>

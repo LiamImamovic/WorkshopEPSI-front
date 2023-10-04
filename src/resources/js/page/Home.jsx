@@ -13,7 +13,7 @@ export const Home = () => {
                     <p>Association</p>
                 </div>
             </Link>
-            <Link id={"bonPlans"} to={`/bonplans`}>
+            <Link id={"bonPlans"} to={`/bonplan`}>
                 <div>
                     <img src={bpimg} alt={"image représentant des étudiants qui discutes"}/>
                     <p>Bon Plans</p>
