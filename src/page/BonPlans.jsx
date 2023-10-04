@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import dataCarrousel from "../data/carrousel.json";
-import Card from "./cardAssoBP.jsx";
+import dataCard from "../data/carrousel.json";
+import Card from "../components/cardAssoBP.jsx";
 import "../css/carrousel.css";
 import "../css/card.css"
+import "../css/asoBP.css"
 export const Bonplans = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [carrouselcount, setCarrouselcount] = useState(0)
@@ -11,12 +12,12 @@ export const Bonplans = () => {
             setCurrentIndex(currentIndex - 1);
         } else {
             // Revenir au dernier élément lorsque vous êtes au début
-            setCurrentIndex(dataCarrousel.length - 1);
+            setCurrentIndex(dataCard.length - 1);
         }
     };
 
     const next = () => {
-        if (currentIndex < dataCarrousel.length - 1) {
+        if (currentIndex < dataCard.length - 1) {
             setCurrentIndex(currentIndex + 1);
         } else {
             // Revenir au premier élément lorsque vous êtes à la fin
@@ -24,7 +25,7 @@ export const Bonplans = () => {
         }
     };
 
-    const carrousel = dataCarrousel.map((item, index) => {
+    const carrousel = dataCard.map((item, index) => {
         if (item.carrousel === "1") {
             return (
                 <Card
@@ -34,12 +35,13 @@ export const Bonplans = () => {
                     logo={item.logo}
                     description={item.description}
                     titre={item.title}
+                    lien="bonplans"
                 />
             );
         }
         return null;
     });
-    const card = dataCarrousel.map((item, index) => {
+    const card = dataCard.map((item, index) => {
         return (
                 <Card
                     key={index}
@@ -54,16 +56,6 @@ export const Bonplans = () => {
 
     return (
         <main>
-            <!--<div id={"carrousel"} className="carousel-container">
-                 <p onClick={prev} className={"leftarrow"}>
-                    &lt;
-                </p>
-                {carrousel}
-                <p onClick={next} className={"rightarrow"}>
-                    &gt;
-                </p>
-            </div>
-            -->
             <div id={"card"}>
                 {card}
             </div>

@@ -1,13 +1,14 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./components/Home";
+import { Home } from "./page/Home.jsx";
 import { Login } from "./components/Login";
 import { Signup } from "./components/Signup";
-import { Asso } from "./components/Asso";
-import { Bonplans } from "./components/Bonplans";
+import { Asso } from "./page/Asso.jsx";
+import { Bonplans } from "./page/BonPlans.jsx";
 import { Dashboard } from "./components/Dashboard";
-import {Header} from "./components/Header.jsx";
+import { Header } from "./components/Header.jsx";
+import { Description } from "./page/description.jsx";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/asso" element={<Asso />}></Route>
             <Route path="/bonplans" element={<Bonplans />}></Route>
+            <Route path="/asso/:id" element={<Description />} />
+            <Route path="/bonplans/:id" element={<Description />} />
             <Route path="/dashboard" element={<Dashboard />}></Route>
           </Routes>
         </BrowserRouter>

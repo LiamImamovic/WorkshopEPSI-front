@@ -1,7 +1,5 @@
 
-#card a{
-    width: 90%;
-}
+
 #card .cardCarouselHome{
     margin-left: 5%;
     margin-top: 20px;
@@ -48,4 +46,12 @@
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+@media screen and (min-width: 768px){
+
+    #card .cardCarouselHome{
+        width: 380px;
+        margin: 10px;
+    }
 }

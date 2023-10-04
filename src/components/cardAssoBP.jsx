@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 function CardAssoBP(props) {
+
     return(
-        <Link to={`/${props.id}`}>
+        <Link to={`/${props.lien}/${props.id}`}>
             <div className={"cardCarouselHome"}>
                 <img className={"cardCarouselImage"} src={props.image} alt={`image de fond ${props.titre}`}/>
                 <div className={"cardCarouselDescriptionLogo"}>

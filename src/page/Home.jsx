@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import "../css/home.css"
-import asso from"../image/DALL·E 2023-10-04 09.33.23.png"
+import asso from "../image/DALL·E 2023-10-04 09.33.23.png"
 import bpimg from "../image/DALL·E 2023-10-04 09.37.35 - Créez une image joyeuse représentant des étudiatns qui étudies.png"
 export const Home = () => {
   return (
