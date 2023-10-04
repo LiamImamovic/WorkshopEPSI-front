@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/card.css";
-import dataCard from "../data/carrousel.json";
+import "../../css/card.css";
+import dataCard from "../../../data/carrousel.json";
 import Card from "../components/cardAssoBP.jsx";
 
 

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import dataCard from "../data/carrousel.json";
+import dataCard from "../../../data/carrousel.json";
 import Card from "../components/cardAssoBP.jsx";
-import "../css/carrousel.css";
-import "../css/card.css"
-import "../css/asoBP.css"
+import "../../css/carrousel.css";
+import "../../css/card.css"
+import "../../css/asoBP.css"
 export const Bonplans = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [carrouselcount, setCarrouselcount] = useState(0)
