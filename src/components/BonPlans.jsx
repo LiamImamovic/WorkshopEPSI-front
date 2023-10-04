@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import dataCarrousel from "../data/carrousel.json";
-import CarrouselCard from "./card.jsx";
+import Card from "./cardAssoBP.jsx";
 import "../css/carrousel.css";
-
+import "../css/card.css"
 export const Bonplans = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [carrouselcount, setCarrouselcount] = useState(0)
@@ -27,7 +27,7 @@ export const Bonplans = () => {
     const carrousel = dataCarrousel.map((item, index) => {
         if (item.carrousel === "1") {
             return (
-                <CarrouselCard
+                <Card
                     key={index}
                     id={item.id}
                     image={item.img}
@@ -39,17 +39,33 @@ export const Bonplans = () => {
         }
         return null;
     });
+    const card = dataCarrousel.map((item, index) => {
+        return (
+                <Card
+                    key={index}
+                    id={item.id}
+                    image={item.img}
+                    logo={item.logo}
+                    description={item.description}
+                    titre={item.title}
+                />
+        );
+    });
 
     return (
         <main>
-            <div id={`carrousel`} className="carousel-container">
-                <p onClick={prev} className={"leftarrow"}>
+            <!--<div id={"carrousel"} className="carousel-container">
+                 <p onClick={prev} className={"leftarrow"}>
                     &lt;
                 </p>
                 {carrousel}
                 <p onClick={next} className={"rightarrow"}>
                     &gt;
                 </p>
+            </div>
+            -->
+            <div id={"card"}>
+                {card}
             </div>
         </main>
     );

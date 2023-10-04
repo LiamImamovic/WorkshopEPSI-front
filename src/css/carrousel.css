@@ -7,7 +7,7 @@
     max-width: none;
     min-width: 100%;
 }
-.cardHome{
+#carrousel .cardCarouselHome{
     height: 400px;
     width: 100%;
     border-radius: 10px;
@@ -15,14 +15,14 @@
     overflow: hidden;
 }
 
-.cardImage{
+#carrousel .cardCarouselImage{
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     z-index: 1;
 }
-.cardDescriptionLogo{
+#carrousel .cardCarouselDescriptionLogo{
     height: 90px;
     z-index: 3;
     background-color: white;
@@ -33,12 +33,12 @@
     justify-content: space-between;
     align-items: center;
 }
-.cardLogo{
+#carrousel .cardCarouselLogo{
     height: 90px;
     padding: 10px;
 }
 
-.cardDescription{
+.cardCarouselDescription{
     padding-left: 10px;
     padding-right: 10px;
 }
