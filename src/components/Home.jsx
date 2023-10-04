@@ -6,19 +6,20 @@ import bpimg from "../image/DALL·E 2023-10-04 09.37.35 - Créez une image joyeu
 export const Home = () => {
   return (
     <section id={"home"}>
-        <Link id={"association"} to={`/asso`}>
-            <div>
-                <img src={asso} alt={"image représentant des étudiants qui discutes"}/>
-                <p>Association</p>
-            </div>
-        </Link>
-        <Link id={"bonPlans"} to={`/bonplans`}>
-            <div>
-                <img src={bpimg} alt={"image représentant des étudiants qui discutes"}/>
-                <p>Bon Plans</p>
-            </div>
-        </Link>
-
+        <div className={"pagehomecenter"}>
+            <Link id={"association"} to={`/asso`}>
+                <div>
+                    <img src={asso} alt={"image représentant des étudiants qui discutes"}/>
+                    <p>Association</p>
+                </div>
+            </Link>
+            <Link id={"bonPlans"} to={`/bonplans`}>
+                <div>
+                    <img src={bpimg} alt={"image représentant des étudiants qui discutes"}/>
+                    <p>Bon Plans</p>
+                </div>
+            </Link>
+        </div>
     </section>
   );
 };
