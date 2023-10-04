@@ -8,7 +8,6 @@ import { Asso } from "./page/Asso.jsx";
 import { Bonplans } from "./page/BonPlans.jsx";
 import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header.jsx";
-import { Description } from "./page/description.jsx";
 
 function App() {
   return (
@@ -22,8 +21,6 @@ function App() {
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/asso" element={<Asso />}></Route>
             <Route path="/bonplans" element={<Bonplans />}></Route>
-            <Route path="/asso/:id" element={<Description />} />
-            <Route path="/bonplans/:id" element={<Description />} />
             <Route path="/dashboard" element={<Dashboard />}></Route>
           </Routes>
         </BrowserRouter>
