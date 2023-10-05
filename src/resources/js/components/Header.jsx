@@ -15,7 +15,6 @@ export const Header = () => {
               <Link to={`/`}>
                   <img className={"logoSite"} src={logoSite} alt={"logo du site Assos & Goodies"}/>
               </Link>
-              <input type="text" placeholder="Rechecher un nom"/>
               <p className={"activationProfil"} onClick={profileMenu}> <CgProfile /> </p>
           </nav>
 

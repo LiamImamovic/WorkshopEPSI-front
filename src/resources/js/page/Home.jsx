@@ -7,6 +7,7 @@ export const Home = () => {
   return (
     <section id={"home"}>
         <div className={"pagehomecenter"}>
+
             <Link id={"association"} to={`/asso`}>
                 <div>
                     <img src={asso} alt={"image représentant des étudiants qui discutes"}/>
