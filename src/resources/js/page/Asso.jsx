@@ -3,8 +3,6 @@ import "../../css/card.css";
 import dataCard from "../../../data/carrousel.json";
 import Card from "../components/cardAssoBP.jsx";
 
-
-
 export const Asso = () => {
     const [rechercheTerm, setRechercheTerm] = useState('');
     const [nombreDeResultats, setNombreDeResultats] = useState(5); // By default, show 5 results
